@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.profile-picture {
+  color: blue;
+  width: fit-content;
+  border: 2px solid blue;
+  border-radius: 100%;
+  padding: 0 7px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-picture img {
+  border-radius: 100%;
+  overflow: hidden;
+  height: 105px;
+  width: 83px;
+}
+
+/* name and time */
+.name-and-time {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+}
+
+.full-name {
+  font-weight: 600;
+  font-size: 1.45rem;
+  color: rgb(31, 30, 30);
+}
+
+.job-title {
+  font-weight: 700;
+  color: rgb(1, 1, 29);
+  font-size: 1.65rem;
+}
+.current-location {
+  color: rgb(105, 104, 116);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.current-time {
+  color: rgb(77, 77, 77);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.example {
+  border: 2px solid blue;
+}
+
+@media screen and (min-width: 756px) {
+  .container {
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid green;
+    justify-content: space-between;
+  }
+
+  .example {
+    border: 2px solid blue;
+  }
+  .name-and-time {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .name {
+    align-items: start;
+  }
+}
